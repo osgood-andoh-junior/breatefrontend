@@ -1,0 +1,78 @@
+.coalitions {
+  max-width: 1200px;
+}
+
+.coalitions h1 {
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+}
+
+.description {
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+}
+
+.filters {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.filters input {
+  padding: 0.5rem;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  min-width: 200px;
+}
+
+.filters input:focus {
+  outline: none;
+  border-color: var(--foreground-color);
+}
+
+.coalitions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.coalition-card {
+  background-color: var(--bg-primary);
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  color: var(--text-primary);
+  transition: transform 0.2s, box-shadow 0.2s;
+  border: 1px solid var(--border-color);
+}
+
+.coalition-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(85, 0, 0, 0.15);
+}
+
+.coalition-card h3 {
+  margin: 0 0 0.5rem 0;
+  color: var(--foreground-color);
+}
+
+.coalition-card p {
+  color: var(--text-primary);
+  margin: 0.5rem 0;
+}
+
+.coalition-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.coalition-meta span {
+  padding: 0.25rem 0;
+}

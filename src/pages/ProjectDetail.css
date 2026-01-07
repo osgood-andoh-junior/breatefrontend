@@ -1,0 +1,122 @@
+.project-detail {
+  max-width: 900px;
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.project-header h1 {
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.project-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.project-actions button {
+  padding: 0.5rem 1rem;
+  background-color: var(--button-primary);
+  color: var(--bg-primary);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.project-actions button:hover {
+  background-color: var(--button-primary-hover);
+}
+
+.project-actions .delete-btn {
+  background-color: var(--pending-color);
+  color: var(--bg-primary);
+}
+
+.project-actions .delete-btn:hover {
+  opacity: 0.9;
+}
+
+.project-status {
+  margin-bottom: 2rem;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+.status-open {
+  background-color: var(--pending-color);
+  color: var(--bg-primary);
+}
+
+.status-in_progress {
+  background-color: var(--pending-color);
+  color: var(--bg-primary);
+}
+
+.status-completed {
+  background-color: var(--success-color);
+  color: var(--bg-primary);
+}
+
+.project-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.project-section {
+  background-color: var(--bg-primary);
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+}
+
+.project-section h2 {
+  color: var(--text-primary);
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.project-section p {
+  color: var(--text-primary);
+  line-height: 1.6;
+}
+
+.detail-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.detail-grid div {
+  color: var(--text-primary);
+}
+
+.detail-grid strong {
+  color: var(--text-primary);
+  margin-right: 0.5rem;
+}
+
+.chat-placeholder {
+  padding: 2rem;
+  text-align: center;
+  background-color: var(--bg-secondary);
+  border-radius: 4px;
+  color: var(--text-secondary);
+}
+
+.chat-placeholder p {
+  margin: 0.5rem 0;
+}

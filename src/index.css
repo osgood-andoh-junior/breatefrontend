@@ -1,0 +1,70 @@
+:root {
+  /* Theme Colors */
+  --foreground-color: #550000;      /* maroon - primary text, headings, main actions */
+  --background-color: #FDFBD4;      /* cream - app background and surfaces */
+  --success-color: #2D5A27;         /* success green - success/completed states */
+  --pending-color: #767171;         /* neutral gray - pending/neutral/disabled states */
+  
+  /* Theme Fonts */
+  --body-font: 'Inter', system-ui, -apple-system, sans-serif;
+  --display-font: 'Bricolage Grotesque', system-ui, -apple-system, sans-serif;
+
+  /* Derived Colors */
+  --text-primary: var(--foreground-color);
+  --text-secondary: var(--pending-color);
+  --bg-primary: var(--background-color);
+  --bg-secondary: rgba(85, 0, 0, 0.05); /* light maroon tint for cards/surfaces */
+  --border-color: rgba(85, 0, 0, 0.2);
+  --link-color: var(--foreground-color);
+  --link-hover-color: rgba(85, 0, 0, 0.8);
+  --button-primary: var(--foreground-color);
+  --button-primary-hover: rgba(85, 0, 0, 0.9);
+  --button-secondary: var(--pending-color);
+  --status-success: var(--success-color);
+  --status-pending: var(--pending-color);
+  --status-completed: var(--success-color);
+
+  font-family: var(--body-font);
+  line-height: 1.5;
+  font-weight: 400;
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--display-font);
+  font-weight: 600;
+  color: var(--text-primary);
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+a {
+  font-weight: 500;
+  color: var(--link-color);
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: var(--link-hover-color);
+}

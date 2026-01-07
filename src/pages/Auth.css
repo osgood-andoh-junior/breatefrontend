@@ -1,0 +1,116 @@
+.auth-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-primary);
+}
+
+.auth-card {
+  background-color: var(--bg-primary);
+  padding: 2rem;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 2px 8px rgba(85, 0, 0, 0.1);
+}
+
+.auth-card h1 {
+  margin-top: 0;
+  text-align: center;
+  color: var(--text-primary);
+  font-family: var(--display-font);
+}
+
+.auth-card h2 {
+  text-align: center;
+  color: var(--text-primary);
+  margin-bottom: 2rem;
+  font-family: var(--display-font);
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--text-primary);
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  box-sizing: border-box;
+  font-family: var(--body-font);
+  font-size: 1rem;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: var(--foreground-color);
+}
+
+.form-group select:hover {
+  border-color: var(--foreground-color);
+}
+
+.form-group select option {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+.auth-card button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: var(--button-primary);
+  color: var(--bg-primary);
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  font-weight: 500;
+}
+
+.auth-card button:hover:not(:disabled) {
+  background-color: var(--button-primary-hover);
+}
+
+.auth-card button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.error {
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  background-color: rgba(85, 0, 0, 0.1);
+  border-radius: 4px;
+  border: 1px solid var(--border-color);
+}
+
+.auth-card p {
+  text-align: center;
+  margin-top: 1.5rem;
+  color: var(--text-primary);
+}
+
+.auth-card a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+.auth-card a:hover {
+  text-decoration: underline;
+}
+

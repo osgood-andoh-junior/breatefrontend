@@ -1,0 +1,228 @@
+.profile {
+  max-width: 900px;
+}
+
+.profile-header {
+  margin-bottom: 2rem;
+}
+
+.profile-header h1 {
+  color: var(--text-primary);
+  margin: 0 0 0.5rem 0;
+}
+
+.full-name {
+  color: var(--text-secondary);
+  margin: 0 0 1rem 0;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  background-color: var(--foreground-color);
+  color: var(--bg-primary);
+  border-radius: 4px;
+  font-size: 0.85rem;
+  margin-right: 0.5rem;
+}
+
+.profile-section {
+  background-color: var(--bg-primary);
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  margin-bottom: 1.5rem;
+}
+
+.profile-section h2 {
+  color: var(--text-primary);
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.profile-section p {
+  color: var(--text-primary);
+  line-height: 1.6;
+}
+
+.profile-info-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.info-item {
+  color: var(--text-primary);
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.info-item:last-child {
+  border-bottom: none;
+}
+
+.info-item strong {
+  color: var(--foreground-color);
+  margin-right: 0.5rem;
+  font-weight: 600;
+}
+
+.collab-circle {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.collab-link {
+  background-color: var(--bg-secondary);
+  padding: 1rem;
+  border-radius: 4px;
+  text-decoration: none;
+  color: var(--text-primary);
+  transition: background-color 0.2s;
+  border: 1px solid var(--border-color);
+}
+
+.collab-link:hover {
+  background-color: rgba(85, 0, 0, 0.1);
+}
+
+.collab-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.collab-info strong {
+  color: var(--foreground-color);
+}
+
+.project-name {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.collab-status {
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  text-transform: capitalize;
+  margin-left: auto;
+}
+
+.status-pending {
+  background-color: var(--pending-color);
+  color: var(--bg-primary);
+}
+
+.status-verified {
+  background-color: var(--success-color);
+  color: var(--bg-primary);
+}
+
+.status-rejected {
+  background-color: var(--pending-color);
+  color: var(--bg-primary);
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.timeline-item {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: var(--bg-secondary);
+  border-radius: 4px;
+  border-left: 3px solid var(--foreground-color);
+}
+
+.timeline-date {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  min-width: 120px;
+}
+
+.timeline-content {
+  color: var(--text-primary);
+  flex: 1;
+}
+
+.timeline-content a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+.timeline-content a:hover {
+  text-decoration: underline;
+}
+
+.profile-projects {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.profile-project-card {
+  background-color: var(--bg-secondary);
+  padding: 1rem;
+  border-radius: 4px;
+  text-decoration: none;
+  color: var(--text-primary);
+  transition: background-color 0.2s;
+  border: 1px solid var(--border-color);
+}
+
+.profile-project-card:hover {
+  background-color: rgba(85, 0, 0, 0.1);
+}
+
+.profile-project-card h3 {
+  margin: 0 0 0.5rem 0;
+  color: var(--foreground-color);
+  font-size: 1.1rem;
+}
+
+.profile-project-card p {
+  margin: 0 0 0.75rem 0;
+  color: var(--text-primary);
+  line-height: 1.5;
+}
+
+.profile-project-card .project-meta {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.profile-project-card .project-status {
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.profile-project-card .status-in_progress {
+  background-color: var(--pending-color);
+  color: var(--bg-primary);
+}
+
+.profile-project-card .status-completed {
+  background-color: var(--success-color);
+  color: var(--bg-primary);
+}
+
+.profile-project-card .project-type {
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+}
+
+.empty-state {
+  color: var(--text-secondary);
+  font-style: italic;
+  margin: 0;
+}

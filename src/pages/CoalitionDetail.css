@@ -1,0 +1,88 @@
+.coalition-detail {
+  max-width: 900px;
+}
+
+.coalition-detail h1 {
+  color: var(--text-primary);
+  margin-bottom: 2rem;
+}
+
+.coalition-section {
+  background-color: var(--bg-primary);
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  margin-bottom: 1.5rem;
+}
+
+.coalition-section h2 {
+  color: var(--text-primary);
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.coalition-section p {
+  color: var(--text-primary);
+  line-height: 1.6;
+}
+
+.detail-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.detail-grid div {
+  color: var(--text-primary);
+}
+
+.detail-grid strong {
+  color: var(--text-primary);
+  margin-right: 0.5rem;
+}
+
+.members-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.member-card {
+  background-color: var(--bg-secondary);
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  color: var(--text-primary);
+  transition: transform 0.2s, box-shadow 0.2s;
+  border: 1px solid var(--border-color);
+}
+
+.member-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(85, 0, 0, 0.15);
+}
+
+.member-card h3 {
+  margin: 0 0 0.5rem 0;
+  color: var(--foreground-color);
+}
+
+.member-card p {
+  color: var(--text-primary);
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+}
+
+.member-meta {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.member-meta span {
+  padding: 0.25rem 0.5rem;
+  background-color: var(--bg-primary);
+  border-radius: 4px;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
