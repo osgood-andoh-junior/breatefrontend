@@ -70,9 +70,10 @@ npm run dev
 ## API Configuration
 
 The API base URL is configured in `src/config.js`:
-- Default: `http://127.0.0.1:8000/api/v1`
+- Default: `https://breate-backend.onrender.com/api/v1`
+- Can be overridden with `VITE_API_BASE_URL` environment variable
 
-Make sure the backend is running on this URL.
+The frontend is configured to use the deployed backend by default.
 
 ## Core Principles
 
