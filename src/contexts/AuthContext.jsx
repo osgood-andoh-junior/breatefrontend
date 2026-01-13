@@ -41,10 +41,9 @@ export const AuthProvider = ({ children }) => {
 
   const login = async (email, password) => {
     try {
-      // Use /users/login which returns tokens compatible with /users/me
+      // authAPI.login already stores token via apiClient.setToken()
       const response = await authAPI.login(email, password);
       if (response.access_token) {
-        localStorage.setItem('access_token', response.access_token);
         // Get user data after successful login
         const userData = await usersAPI.getCurrentUser();
         setUser(userData);
@@ -57,9 +56,9 @@ export const AuthProvider = ({ children }) => {
     }
   };
 
-  const register = async (email, password, username, archetype_id, tier_id) => {
+  const register = async (email, password, archetype_id, tier_id) => {
     try {
-      await authAPI.register(email, password, username, archetype_id, tier_id);
+      await authAPI.register(email, password, archetype_id, tier_id);
       // After registration, log in
       return await login(email, password);
     } catch (error) {

@@ -50,11 +50,10 @@ const Signup = () => {
         return;
       }
 
-      // Register user
+      // Register user (username is optional and can be set later in profile)
       await authAPI.register(
         formData.email,
         formData.password,
-        formData.username,
         parseInt(formData.archetype_id),
         parseInt(formData.tier_id)
       );

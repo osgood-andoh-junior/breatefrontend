@@ -137,8 +137,8 @@ Protected routes require authentication and redirect to `/login` if not authenti
 
 All API services mirror backend endpoints exactly:
 
-- `authAPI`: `/api/v1/auth/*`
-- `usersAPI`: `/api/v1/users/*`
+- `authAPI`: `/api/v1/users/signup`, `/api/v1/users/login` (authentication)
+- `usersAPI`: `/api/v1/users/me` (user data)
 - `discoverAPI`: `/api/v1/discover/*`
 - `projectsAPI`: `/api/v1/projects/*`
 - `profileAPI`: `/api/v1/profile/*`

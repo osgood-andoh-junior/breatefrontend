@@ -1,23 +1,22 @@
-// Auth API - mirrors /api/v1/auth endpoints
+// Auth API - handles authentication endpoints
 import { apiClient } from './api';
 import { API_BASE_URL } from '../config';
 
 export const authAPI = {
-  // POST /api/v1/users/signup (matches /users/login for token compatibility)
-  register: async (email, password, username, archetype_id, tier_id) => {
+  // POST /api/v1/users/signup
+  // Backend expects: email, password, archetype_id, tier_id (username is optional and not in signup schema)
+  register: async (email, password, archetype_id, tier_id) => {
     return apiClient.post('/users/signup', {
       email,
       password,
-      username,
       archetype_id,
       tier_id,
     });
   },
 
-  // POST /api/v1/users/login (uses OAuth2PasswordRequestForm - form-urlencoded)
-  // Note: Must use form-urlencoded, not JSON, to match backend OAuth2PasswordRequestForm
+  // POST /api/v1/users/login
+  // Uses OAuth2PasswordRequestForm which expects form-urlencoded data
   login: async (email, password) => {
-    // OAuth2PasswordRequestForm expects form-urlencoded data
     const formData = new URLSearchParams();
     formData.append('username', email); // OAuth2 uses 'username' field for email
     formData.append('password', password);
